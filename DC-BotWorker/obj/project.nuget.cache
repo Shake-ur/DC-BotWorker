@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "L2vjz8NFrE8=",
+  "dgSpecHash": "8klKLSE3ooU=",
   "success": true,
   "projectFilePath": "/home/dkraemer/RiderProjects/DC-BotWorker/DC-BotWorker/DC-BotWorker.vbproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/dkraemer/.nuget/packages/netcord/1.0.0-alpha.453/netcord.1.0.0-alpha.453.nupkg.sha512"
+  ],
   "logs": []
 }

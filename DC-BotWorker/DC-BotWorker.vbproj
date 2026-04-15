@@ -6,4 +6,8 @@
         <TargetFramework>net9.0</TargetFramework>
     </PropertyGroup>
 
+    <ItemGroup>
+      <PackageReference Include="NetCord" Version="1.0.0-alpha.453" />
+    </ItemGroup>
+
 </Project>

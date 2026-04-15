@@ -15,7 +15,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("DC-BotWorker"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+308715e0c22b28b8b1511620d6ab6d4fd9162c3d"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("DC-BotWorker"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("DC-BotWorker"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")> 
