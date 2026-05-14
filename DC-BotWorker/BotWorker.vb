@@ -1,18 +1,26 @@
-Imports  NetCord
-imports System
-Imports Microsoft.Extensions.Configuration
+Imports NetCord.Hosting.Gateway
+Imports NetCord
+Imports NetCord.Hosting.Services
+Imports NetCord.Hosting.Services.ApplicationCommands
+imports NetCord.Rest
+imports MIcrosoft.Extensions.Logging
+Imports Microsoft.Extensions.Hosting
 Namespace Bot
-    Public Shared Class BotWorker
-        Public Shared Property Token as String
-        Public Shared Property Prefix as String
-        Public Shared Property Dev as Boolean = False
-        Public Shared Property SkipReg as Boolean
-        Public Shared ReadOnly Property Configuration
-        'Dog
+    Public Class BotWorker
         
-        Dim env = Environment.GetEnvironmentVariable("DOTNET_ENVIRONMENT")
+        Public Sub New()
+            Start()
+        End Sub
         
-        
-
+        Public Shared async sub Start()
+            Dim builder as HostApplicationBuilder = Host.CreateApplicationBuilder()
+            builder.Logging.ClearProviders()
+            builder.Logging.AddConsole()
+            builder.Services.AddDiscordGateway().AddApplicationCommands()
+            
+            Dim tempHost = builder.Build()
+            tempHost.AddSlashCommand("status","get status if the serverr is currently up!",Function() "Currently the server is not working, not even remotely XD lmao" )
+            temphost.Run()
+        End sub
     End Class
 End Namespace
