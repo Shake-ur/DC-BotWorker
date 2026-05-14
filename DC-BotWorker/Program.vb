@@ -5,7 +5,7 @@ Imports Microsoft.Extensions.Hosting
 Namespace Bot
     Module Program
         Public  Sub Main()
-            Botworker.Start()
+            BotWorker.Start().GetAwaiter().GetResult()
         End sub
     End Module
 End namespace
