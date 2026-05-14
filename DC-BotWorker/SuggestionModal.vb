@@ -9,7 +9,7 @@ Public Class SuggestionModal
                 New LabelProperties("Feature Name",
                                     New TextInputProperties("suggestion_name", TextInputStyle.Short) With {
                                        .Placeholder = "Give your feature a short name",
-                                       .MinLength = 3,
+                                       .MinLength = 1,
                                        .MaxLength = 80,
                                        .Required = True
                                        }
@@ -17,7 +17,7 @@ Public Class SuggestionModal
                 New LabelProperties("Description",
                                     New TextInputProperties("suggestion_description", TextInputStyle.Paragraph) With {
                                        .Placeholder = "Describe what the feature should do...",
-                                       .MinLength = 10,
+                                       .MinLength = 0,
                                        .MaxLength = 1000,
                                        .Required = True
                                        }
